@@ -9,7 +9,7 @@ function getClock() {
 
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 
-  if (hours === "0" && minutes === "0" && seconds === "0") {
+  if (hours === "00" && minutes === "00" && seconds === "00") {
     getDates(); // 정각에 날짜 변경
   }
 }
@@ -20,7 +20,6 @@ function getDates() {
   const month = String(date.getMonth() + 1).padStart(2, "0");
   const day = String(date.getDate()).padStart(2, "0");
 
-  console.log(`${year}.${month}.${day}`);
   dateDiv.innerText = `${year}.${month}.${day}`;
 }
 
