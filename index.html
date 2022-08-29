@@ -20,18 +20,31 @@
       <div id="clock">
         <h1></h1>
       </div>
-      <div id="date"></div>
+      <div id="date-container">
+        <div id="date"></div>
+        <div id="weather">Loading..</div>
+      </div>
       <div id="login">
         <form id="loginForm">
           <input type="text" placeholder="What's your name?" required />
         </form>
+        <h2 class="hidden"></h2>
       </div>
-      <div id="todo"></div>
+      <div id="todo">
+        <input
+          type="text"
+          id="todo-input"
+          required
+          placeholder="Please Enter What To Do✍"
+        />
+        <div id="todo-list"></div>
+      </div>
       <div id="quotes"></div>
     </div>
   </body>
   <script src="./js/background.js"></script>
   <script src="./js/clock-date.js"></script>
+  <script src="./js/weather.js"></script>
   <script src="./js/login.js"></script>
   <script src="./js/todo.js"></script>
   <script src="./js/quotes.js"></script>

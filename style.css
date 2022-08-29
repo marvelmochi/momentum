@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 #wrap {
@@ -18,21 +18,41 @@ body {
   text-align: center;
   font-size: 48px;
   text-shadow: 1px 1px 2px black;
-  margin-top: 70px;
+  margin-top: 20px;
   padding: 10px;
   font-family: "Anton";
   letter-spacing: 4px;
 }
 /* date */
-#date {
-  text-shadow: 1px 1px 2px black;
+#date-container {
+  display: flex;
+  justify-content: center;
+}
+#date-container * {
   font-size: 28px;
   text-align: center;
   font-family: "Alumni Sans Pinstripe", sans-serif;
+  text-shadow: 2px 2px 2px black;
+  padding: 5px;
+  margin-bottom: 10px;
 }
+#weather {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
 /* login */
-#loginForm * {
-  font-family: "Alumni Sans Pinstripe", sans-serif;
+#login h2 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  text-shadow: 1px 1px 2px black;
+  background: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid #ffffff;
+  width: 500px;
+  border-radius: 0.2em;
+  margin: 0 auto;
 }
 
 #loginForm input {
@@ -53,12 +73,36 @@ body {
 }
 
 /* todo */
-#todo {
+#todo * {
+  font-family: "Source Sans Pro", sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+#todo-input {
+  display: flex;
+  color: #ffffff;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: solid;
+  width: 400px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+#todo-input:focus {
+  outline: none;
+}
+#todo-input::placeholder {
+  color: #ffffff;
+}
+#todo-list {
   width: 500px;
-  height: 300px;
+  height: 310px;
   background-color: yellow;
   margin: 0 auto;
   margin-top: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow-y: hidden;
 }
 
 /* quotes */
@@ -68,8 +112,11 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
   text-align: center;
   font-size: 18px;
   line-height: 30px;
+}
+
+.hidden {
+  display: none;
 }
