@@ -31,13 +31,18 @@
         <h2 class="hidden"></h2>
       </div>
       <div id="todo">
-        <input
-          type="text"
-          id="todo-input"
-          required
-          placeholder="Please Enter What To Do✍"
-        />
-        <div id="todo-list"></div>
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Please Enter What To Do.  ▼"
+            required
+            autocomplete="off"
+          />
+        </form>
+        <div id="todo-list" class="scrollBar">
+          <div class="todo-container"></div>
+        </div>
       </div>
       <div id="quotes"></div>
     </div>
