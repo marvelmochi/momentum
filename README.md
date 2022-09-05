@@ -1,2 +1,2 @@
 # momentum
-javaScript for beginners Chanllenge Project
+javaScript for beginners Project
