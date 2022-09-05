@@ -14,7 +14,6 @@ function onSubmit(event) {
     content: todo,
   };
   todos.push(newTodo);
-  console.log(todos);
   paintTodo(newTodo);
   saveTodos();
 }
@@ -46,13 +45,8 @@ function deleteTodo(event) {
 
   const parsedTodos = JSON.parse(savedTodos);
   console.log(parsedTodos);
-  /*parsedTodos.forEach((todo) => {
-    if (todoBox.id === String(todo.id)) {
-      console.log("ID 일치", todoBox.id);
-    }
-  });*/
+
   const newTodos = parsedTodos.filter((todo) => todoBox.id !== String(todo.id));
-  console.log(newTodos);
   todos = newTodos;
   saveTodos();
 }
