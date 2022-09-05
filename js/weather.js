@@ -1,4 +1,4 @@
-const API_KEY = `f6779c21feeed6ae91355a0a13e10391`;
+const API_KEY = config.API_KEY;
 const weatherBox = document.getElementById("weather");
 function onGeoSuccess(position) {
   let lat = position.coords.latitude;
