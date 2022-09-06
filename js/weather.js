@@ -1,3 +1,4 @@
+import { config } from "./apiKey.js";
 const API_KEY = config.API_KEY;
 const weatherBox = document.getElementById("weather");
 function onGeoSuccess(position) {
